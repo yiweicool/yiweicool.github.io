@@ -50,7 +50,7 @@ li a {
 }
 
 li a.active {
-  background-color: grey;
+  background-color: black;
   color: white;
 }
 
