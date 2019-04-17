@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="gr__yiweicool_github_io">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <a class="skip-main" href="#main">Skip to main content</a>
+  <header>
+    <h1>Movie</h1>
+    <script src="js/navbar.js"></script>
+    <nav id="navigation">
+        <ul class="nav">
+          <li><a href = "index.html">Project</a></li>
+          <li><a href = "about.html">About</a></li>
+          <li><a class= "active" href = "movie.html">Movie</a></li>
+          <li><a href = "photography.html">Photography</a></li>
+
+        </ul>
+    </nav>
+  </header>
+
+
+
+  <main id="main" tabindex="-1">
+    <div class="movie">
+    <p>This is an original movie created by me and my friend.
+      The video chords with my second project triangle.
+    </p>
+
+    <div class="player">
+  <video class="player-video" src="docs/triangle.mp4"></video>
+
+  <div class="player-controls">
+
+    <div class="progress">
+      <div class="filled-progress"></div>
+    </div>
+
+        <div class="ply-btn">
+        <button class="player-btn toggle-play" title="Toggle Play">
+        <svg class="" width="16" height="16" viewBox="0 0 16 16"><title>play</title><path d="M3 2l10 6-10 6z"></path></svg>
+        </button>
+    </div>
+
+    <div class="sliders">
+    <input type="range" name="volume" class="player-slider" min="0" max="1" step="0.05" value="1">
+
+
+    <button data-skip="-10" class="player-btn">« 10s</button>
+
+    <button data-skip="10" class="player-btn">10s »</button>
+
+  </div>
+</div>
+</div>
+<script src="js/video.js"></script>
+  </main>
+
+
+</body>
+
+
+<footer class='foot'>
+  <small>&copy; Created by Yiwei Xu, 2018.</small>
+</footer>
+</html>

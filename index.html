@@ -13,32 +13,48 @@
   <a class="skip-main" href="#main">Skip to main content</a>
     <header>
       <h1>Hello, I am Yiwei!</h1>
-      <nav>
+
+
+
+      <nav id="navigation">
           <ul class="nav">
             <li><a class="active" href = "index.html">Project</a></li>
             <li><a href = "about.html">About</a></li>
-            <li><a href = "music.html">Music</a></li>
+            <li><a href = "movie.html">Movie</a></li>
             <li><a href = "photography.html">Photography</a></li>
           </ul>
       </nav>
+
+      <!-- Control buttons -->
+      <div id="myBtnContainer">
+        <button tabindex="0" class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button tabindex="0" class="btn" onclick="filterSelection('design')"> Design</button>
+        <button tabindex="0" class="btn" onclick="filterSelection('research')"> Research</button>
+        <button tabindex="0" class="btn" onclick="filterSelection('programming')"> Programming</button>
+      </div>
+
+
+
     </header>
     <main id="main" tabindex="-1">
       <div class = "row">
         <div class = "column">
-          <a href = "parddy.html">
+          <a class = "filterDiv design" href = "parddy.html">
             <img src="images/parddy-cover.png" alt = "This is my first project parddy"/>
           </a>
-          <img src="images/triangle-cover.png" alt = "Image of my project 2 Triangle"/>
+          <img tabindex="0" class = "filterDiv research" src="images/triangle-cover.png" alt = "Image of my project 2 Triangle"/>
         </div>
         <div class = "column">
-          <img src="images/whulib-cover.png" alt = "Image of my project 3 Whulib"/>
-          <img src="images/programmer-cover.png" alt = "Image of my project Programming"/>
+          <img tabindex="0" class = "filterDiv design" src="images/whulib-cover.png" alt = "Image of my project 3 Whulib"/>
+          <img tabindex="0" class = "filterDiv programming"src="images/programmer-cover.png" alt = "Image of my project Programming"/>
         </div>
     </main>
 
-    <footer>
+    <footer class='foot'>
       <small>&copy; Created by Yiwei Xu, 2018.</small>
     </footer>
 
+      <script src="js/navbar.js"></script>
+      <script src="js/filter.js"></script>
 </body>
 </html>

@@ -13,11 +13,12 @@
   <a class="skip-main" href="#main">Skip to main content</a>
   <header>
   <h1>Parddy</h1>
-  <nav>
+  <script src="js/navbar.js"></script>
+  <nav id="navigation">
       <ul class="nav">
         <li><a class="active" href = "index.html">Project</a></li>
         <li><a href = "about.html">About</a></li>
-        <li><a href = "music.html">Music</a></li>
+        <li><a href = "movie.html">Movie</a></li>
         <li><a href = "photography.html">Photography</a></li>
       </ul>
   </nav>
@@ -26,9 +27,7 @@
   <main id="main" tabindex="-1">
 
     <div class="background">
-      <h2>Enjoy preparing for a party together</h2>
-      <h3>Time span: Sep 2018 - Present</h3>
-      <h3>My Role: User research, User interview, Rapid prototype, wireframe and interface design.</h3>
+
     </div>
 <div class="content">
   <div class = "process">
@@ -78,7 +77,60 @@
       The personas represent users’ goals and pain points that helped me to prioritize different user needs to guide the converging phase of my design process.
     </h5>
     </div>
+    <!-- Container for the image gallery -->
+  <div tabindex="0" class="slidecontainer">
 
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+        <img src="images/amanda.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+        <img src="images/jeff.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+        <img src="images/linda.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+        <img src="images/cara.jpg" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail images -->
+    <div class="sliderow">
+      <div class="slidecolumn">
+        <img class="demo cursor" src="images/amanda.jpg" style="width:100%" onclick="currentSlide(1)" alt="amanda's persona">
+      </div>
+      <div class="slidecolumn">
+        <img class="demo cursor" src="images/jeff.jpg" style="width:100%" onclick="currentSlide(2)" alt="Jeff's persona">
+      </div>
+      <div class="slidecolumn">
+        <img class="demo cursor" src="images/linda.jpg" style="width:100%" onclick="currentSlide(3)" alt="linda's persona">
+      </div>
+      <div class="slidecolumn">
+        <img class="demo cursor" src="images/cara.jpg" style="width:100%" onclick="currentSlide(4)" alt="Cara's persona">
+      </div>
+    </div>
+  </div>
+
+
+
+
+    </div>
     <div class = "process">
       <h4>Competitive Analysis</h4>
       <h5>I analyzed multiple existing matching platforms, both physical and digital, including Meetup,
@@ -97,12 +149,15 @@
           <li>The gap between different friend circle</li>
         </ul>
       </div>
+      <div class="finding">
+    </div>
+    <div class="solution">
     </div>
     </main>
 
-<footer>
+<footer class='foot'>
   <small>&copy; Created by Yiwei Xu, 2018.</small>
 </footer>
-
+  <script src="js/slides.js"></script>
 </body>
 </html>
