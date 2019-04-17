@@ -40,7 +40,7 @@ a.skip-main:focus, a.skip-main:active {
 
 li a {
   display: block;
-  color: darkgrey;
+  color: black;
   padding: 8px 16px;
   font-size: 16px;
   text-decoration: none;
@@ -172,7 +172,7 @@ h3{
 }
 
 h4{
-  color: #888;
+  color: ##6c45bc;
   margin-bottom: 0px;
   font: 300 16px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -196,7 +196,7 @@ body {
 
 .fa-music {
   font-size: 36px;
-  color:#8E6FCB
+  color:#7c59c3;
 }
 
 .fa-coffee {
@@ -217,7 +217,7 @@ body {
 
 .btn-alt {
 
-  border: 1px solid #8E6FCB;
+  border: 1px solid #7c59c3;
   padding: 5% 30%;
   margin-bottom: 30px;
 }
@@ -292,7 +292,7 @@ body {
 
 .callout-header {
   padding: 10px 15px;
-  background: #8E6FCB;
+  background: #7c59c3;
   font-size: 24px;
   color: white;
 }
@@ -341,7 +341,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #8E6FCB;
+  background-color: #7c59c3;
 }
 
 /* Add a background color and some padding around the form */
@@ -352,7 +352,7 @@ input[type=submit]:hover {
 }
 
 .aboutcontainer {
-    border: 3px solid #8E6FCB;
+    border: 3px solid #7c59c3;
     /*box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);*/
     padding: 20px 40px 40px;
     max-width: 640px;
@@ -388,7 +388,7 @@ a.resume{
   font-family:'Roboto',sans-serif;
   font-weight:300;
   color:#FFFFFF;
-  background-color:#8E6FCB;
+  background-color:#7c59c3;
   text-align:center;
   transition: all 0.2s;
 }
@@ -469,12 +469,12 @@ a.resume:hover{
 
   li a.active {
     background-color: transparent;
-    color: black;
+    color: #6c45bc;
   }
 
   li a:hover:not(.active) {
     background-color: transparent;
-    color: black;
+    color: #6c45bc;
   }
   .row{
     overflow: hidden;
@@ -648,7 +648,7 @@ a.resume:hover{
     cursor:pointer;
     margin:0px 0px 1px 0px;
     padding:10px;
-    background:#8E6FCB;
+    background:#7c59c3;
     color:#fff;
     width:100%;
     border:1px solid lightgrey;
@@ -796,7 +796,7 @@ a.resume:hover{
         transform: translateY(100%) translateY(-5px);
         transition: all 0.3s;
         flex-wrap: wrap;
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.9);
       }
 
       .player-controls > * {
