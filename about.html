@@ -57,11 +57,12 @@
     <div class="accordionItem open" >
           <h2 tabindex="0" class="accordionItemHeading">Skills</h2>
           <div class="accordionItemContent">
+            <ul>
             <li class="item border-i"> Interaction Design </li>
             <li class="item border-i"> UX Research</li>
             <li class="item border-i"> Graphic Design </li>
             <li class="item border-i"> Motion Design </li>
-
+          </ul>
           </div>
         </div>
 
@@ -87,10 +88,12 @@
         <div class="accordionItem close">
           <h2 tabindex="0" class="accordionItemHeading">Software</h2>
           <div class="accordionItemContent">
+            <ul>
             <li class="item border-i"> Sketch </li>
             <li class="item border-i"> Photoshop</li>
             <li class="item border-i"> Figma</li>
             <li class="item border-i"> Illustrator</li>
+          </ul>
         </div>
     </div>
   <script src="js/accordian.js"></script>
@@ -99,50 +102,50 @@
 
 </div>
 
+<!-- call out form-->
+<div class="callout">
+  <div class="callout-header">Contact Me</div>
+  <span tabindex="0" class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
 
+    <div class="container">
+      <form name="contactform" action="action_page.php" onsubmit = "return validateForm()" method='post'>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+        <label for="subject">Things to tell</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+<!-- form validating -->
+        <input type="submit" value="Submit">
+        <script>
+          function validateForm() {
+            var fn = document.forms["contactform"]["fname"].value;
+            var ln = document.forms["contactform"]["lname"].value;
+            var subject = document.forms["contactform"]["subject"].value;
+            if (fn == "") {
+              alert("blank must be filled out");
+              return false;
+            }
+            if (ln == "") {
+              alert("blank must be filled out");
+              return false;
+            }
+            if (subject == "") {
+              alert("blank must be filled out");
+              return false;
+            }
+          }
+</script>
 
 
   </main>
 
-  <!-- call out form-->
-  <div class="callout">
-    <div class="callout-header">Contact Me</div>
-    <span tabindex="0" class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
 
-      <div class="container">
-        <form name="contactform" action="action_page.php" onsubmit = "return validateForm()" method='post'>
-
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-
-          <label for="subject">Things to tell</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-
-  <!-- form validating -->
-          <input type="submit" value="Submit">
-          <script>
-            function validateForm() {
-              var fn = document.forms["contactform"]["fname"].value;
-              var ln = document.forms["contactform"]["lname"].value;
-              var subject = document.forms["contactform"]["subject"].value;
-              if (fn == "") {
-                alert("blank must be filled out");
-                return false;
-              }
-              if (ln == "") {
-                alert("blank must be filled out");
-                return false;
-              }
-              if (subject == "") {
-                alert("blank must be filled out");
-                return false;
-              }
-            }
-</script>
 
         </form>
       </div>

@@ -160,14 +160,14 @@ h1{
 }
 h2{
   text-align: left;
-  color: #fff;
+  color: black;
   margin-bottom: 5px;
   font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h3{
-  color: #fff;
-  margin-bottom: 0px;
+  color: black;
+  margin-bottom: 40px;
   font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
