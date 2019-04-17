@@ -36,7 +36,7 @@
 
     <div class="player">
   <video class="player-video" src="docs/triangle.mp4"></video>
-
+  <track kind="captions" src="video.vtt"/>
   <div class="player-controls">
 
     <div class="progress">
@@ -50,9 +50,8 @@
     </div>
 
     <div class="sliders">
-    <label for="volume">volume</label>
-    <input type="range" name="volume" class="player-slider" min="0" max="1" step="0.05" value="1">
-
+    <label for="volume">volume<input type="range" name="volume" class="player-slider" min="0" max="1" step="0.05" value="1">
+    </label>
 
     <button data-skip="-10" class="player-btn">« 10s</button>
 
